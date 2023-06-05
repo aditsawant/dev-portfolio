@@ -9,46 +9,40 @@
 </head>
 <body>
     <!-- Nav Bar-->
-    <ul class="nav" id="navbar">
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-
-        <!-- The bellow part needs to be visible only in the mobile version -->    
-        <button>
-            <!--Hamburger menu-->
-        </button>
-    </ul>
-
-    <!-- Intro Text --> 
-    <h1>I am Lorem Ipsum.</h1>
-
-    <!-- Intro Para -->
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum beatae illum adipisci labore recusandae provident distinctio molestiae dolores ullam, tempore ut? Velit expedita aperiam rem unde, facere sint ea? Nisi.
-    </p> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button>
+                    <!--Hamburger menu-->
+                </button></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- Skills -->
-    <h2>Skills</h2>
-    <table id="skills">
-        <tr>
-            <td>Java</td>
-            <td>90%</td>
-        </tr>
-        <tr>
-            <td>Spring Boot</td>
-            <td>70%</td>
-        </tr>
-        <tr>
-            <td>Microservice Architecture</td>
-            <td>90%</td>
-        </tr>
-    </table>
+    <!-- Home -->
+    <section id="home">
+        <!-- Intro Text --> 
+        <div><h1>I am Lorem Ipsum.</h1></div>
+        <!-- Intro Para -->
+        <div><p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum beatae illum adipisci labore recusandae provident distinctio molestiae dolores ullam, tempore ut? Velit expedita aperiam rem unde, facere sint ea? Nisi.
+        </p></div> 
+    </section>
+        
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief description of yourself and your skills.</p>
+    </section>
 
     <!-- Projects -->
-    <h2>Projects</h2>
-    <div id="projects">
+    <section id="projects">
+        <h2>Projects</h2>
         <div class="project">
             <h3>project name</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor dignissimos sequi veritatis temporibus repudiandae expedita, id possimus excepturi deleniti nostrum, reprehenderit animi blanditiis incidunt, in voluptatum quisquam minima facilis.</p>
@@ -65,8 +59,48 @@
             <h3>project name</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor dignissimos sequi veritatis temporibus repudiandae expedita, id possimus excepturi deleniti nostrum, reprehenderit animi blanditiis incidunt, in voluptatum quisquam minima facilis.</p>
         </div>
-    </div>
+    </section>
         
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <td>Java</td>
+                <td>90%</td>
+            </tr>
+            <tr>
+                <td>Spring Boot</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>Microservice Architecture</td>
+                <td>90%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <div>                
+            <a class="button" href="https://www.github.com/aditsawant"> <img id="contactlogo" src="./assets/icons/291716_github_logo_social network_social_icon.png" alt="Github Icon"></a>
+            <a class="button" href="https://www.linkedin.in/in/aditsawant"> <img id="contactlogo" src="./assets/icons/291709_logo_linked in_social network_social_social media_icon.png" alt="LinkedIn Icon"></a>
+            <a class="button" href="mailto:aditsawant@gmail.com"> <img id="contactlogo" src="./assets/icons/5340267_e_email_letter_mail_icon.png" alt="Email Icon"></a>
+        </div>
+    </section>
     <!-- Contact info -->
     <script src="assets/js/app.js"></script>
 </body>
